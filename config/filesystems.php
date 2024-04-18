@@ -41,6 +41,24 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'logos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/logos'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'prodImg' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/productImages'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'gerantImg' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/gerantImages'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',
